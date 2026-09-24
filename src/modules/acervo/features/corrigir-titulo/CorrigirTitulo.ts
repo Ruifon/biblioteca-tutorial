@@ -1,5 +1,6 @@
 
-
+import type { LivroRepository } from "../../domain/LivroRepository";
+import { NotFound, RuleConflict } from "../../../../shared/errors";
 
 export class CorrigirTitulo {
   constructor(private readonly livros: LivroRepository) {}

@@ -1,4 +1,8 @@
 
+import type { Hono } from "hono";
+import type { UseCases } from "../../../../composition";
+
+
 
 export function register(routes: Hono, useCases: UseCases): void {
   routes.patch("/livros/:id/titulo", async (contexto) => {
